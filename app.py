@@ -453,6 +453,15 @@ elif menu == "References":
 
     """)
 
+# --- FOOTER ---
+st.markdown("---")
+footer_col1, footer_col2, footer_col3 = st.columns(3)
+with footer_col1:
+    st.caption("© 2024 Venerate Mdaka")
+with footer_col2:
+    st.caption("University of Mpumalanga")
+with footer_col3:
+    st.caption("BSc Honours Research Project")
 
 
 
