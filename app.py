@@ -52,6 +52,31 @@ menu = st.sidebar.radio(
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📄 Documents")
 
+# --- PAGE CONFIGURATION ---
+st.set_page_config(
+    page_title="Ecological Role of Macroplastics",
+    layout="wide"
+)
+
+# --- SIDEBAR NAVIGATION ---
+menu = st.sidebar.radio(
+    "Navigation",
+    [
+        "Researcher Profile",
+        "Study Overview",
+        "Ethical Clearance",
+        "Methods",
+        "Results",
+        "Discussion",
+        "Conclusion",
+        "Acknowledgments",
+        "References"
+    ]
+)
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 📄 Documents")
+
 # --- RESEARCHER PROFILE ---
 if menu == "Researcher Profile":
     st.title(
@@ -66,8 +91,6 @@ if menu == "Researcher Profile":
     🔗 LinkedIn: [https://www.linkedin.com/in/venerate-mdaka-799703279](https://www.linkedin.com/in/venerate-mdaka-799703279)  
     🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
     """)
-
-
 
     st.divider()
 
@@ -519,6 +542,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
