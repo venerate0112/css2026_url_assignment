@@ -32,18 +32,68 @@ st.sidebar.markdown("### 📄 Documents")
 
 # --- RESEARCHER PROFILE ---
 if menu == "Researcher Profile":
-    st.title(
-        "Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates "
-        "in the Crocodile River, Mpumalanga"
-    )
+    st.title("Researcher Profile")
+    
+    col1, col2 = st.columns([1, 2])
+    
+    with col1:
+        # Load your local researcher image
+        try:
+            researcher_img = Image.open("profile_pic.png")
+            st.image(researcher_img, caption="Venerate Mdaka", use_column_width=True)
+        except:
+            st.warning("Researcher image not found. Please make sure 'profile_pic.png' is in the correct folder.")
+    
+    with col2:
+        st.markdown("""
+        ### Venerate Mdaka
+        **BSc Honours in Environmental Science**  
+        University of Mpumalanga
+        
+        ### Research Focus
+        - Freshwater Ecology
+        - Plastic Pollution Studies
+        - Macroinvertebrate Communities
+        - Aquatic Habitat Assessment
+        
+        ### Current Project
+        **Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates**  
+        Crocodile River, Mpumalanga, South Africa
+        """)
+    
+    st.markdown("---")
+    
+    # Contact Information in columns
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        st.markdown("""
+        ### Contact Information
+        📧 **Email:** veneratemdakahlonipho@gmail.com
+        """)
+    
+    with col2:
+        st.markdown("""
+        ### Academic Background
+        - **BSc Honours in Environmental Science**  
+          University of Mpumalanga (2025)
+        
+        - **Aquatic Systems Research Group (ASRG)**  
+          Research affiliate
+        
+        - **National Research Foundation (NRF)**  
+          Scholarship Recipient
+        """)
+    
+    with col3:
+        st.markdown("""
+        ### Research Skills
+        - Field Sampling Techniques
+        - Statistical Analysis
+        - Laboratory Analysis
+        - Scientific Writing
+        """)
 
-    st.markdown("""
-    Venerate Mdaka | BSc Honours in Environmental Science | University of Mpumalanga   
-
-    📧 Email: [veneratemdakahlonipho@gmail.com](mailto:veneratemdakahlonipho@gmail.com)  
-    🔗 LinkedIn: [https://www.linkedin.com/in/venerate-mdaka-799703279](https://www.linkedin.com/in/venerate-mdaka-799703279)  
-    🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
-    """)
 
     st.divider()
 
@@ -478,6 +528,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
