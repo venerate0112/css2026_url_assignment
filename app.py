@@ -27,8 +27,6 @@ menu = st.sidebar.radio(
     ]
 )
 
-
-
 # --- RESEARCHER PROFILE ---
 if menu == "Researcher Profile":
     st.title("Researcher Profile")
@@ -551,6 +549,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
