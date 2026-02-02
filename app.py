@@ -397,34 +397,33 @@ elif menu == "Discussion":
     durability, and ability to become lodged within the river channel.
     </p>
     """, unsafe_allow_html=True)
-
 # --- CONCLUSION ---
 elif menu == "Conclusion":
     st.subheader("Conclusion")
-        
-        st.markdown("""
-        ### Main Conclusions
-        
-        #### 1. Habitat Function Confirmed
-        ✅ Macroplastics provide viable habitats for aquatic macroinvertebrates
-        ✅ Comparable community structure to natural substrates
-        
-        #### 2. Seasonal Dynamics
-        ✅ Significant seasonal variation in colonization patterns
-        ✅ Macroplastics more important during high-flow conditions
-        
-        #### 3. Management Implications
-        ⚠️ Plastic pollution has complex ecological roles
-        ⚠️ Removal strategies should consider habitat function
-        ⚠️ Need for integrated pollution management
-        """)
-        
-        st.info("""
-        **Recommendations:**
-        1. Consider ecological functions in plastic pollution management
-        2. Monitor plastic habitats in conservation planning
-        3. Further research on long-term impacts
-        """)
+    
+    st.markdown("""
+    ### Main Conclusions
+
+    #### 1. Habitat Function Confirmed
+    ✅ Macroplastics provide viable habitats for aquatic macroinvertebrates
+    ✅ Comparable community structure to natural substrates
+
+    #### 2. Seasonal Dynamics
+    ✅ Significant seasonal variation in colonization patterns
+    ✅ Macroplastics more important during high-flow conditions
+
+    #### 3. Management Implications
+    ⚠️ Plastic pollution has complex ecological roles
+    ⚠️ Removal strategies should consider habitat function
+    ⚠️ Need for integrated pollution management
+    """)
+    
+    st.info("""
+    **Recommendations:**
+    1. Consider ecological functions in plastic pollution management
+    2. Monitor plastic habitats in conservation planning
+    3. Further research on long-term impacts
+    """)
 
 # --- ACKNOWLEDGMENTS ---
 elif menu == "Acknowledgments":
@@ -482,6 +481,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
