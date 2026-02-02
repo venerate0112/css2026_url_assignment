@@ -298,27 +298,6 @@ elif menu == "Results":
     - S1: Natural (2,232), Plastics (1,916)  
     - S2: Natural (181), Plastics (423)  
     """)
-    
-# 2. Species Composition
-st.markdown("## 2. Species Composition")
-
-# Study Results Summary
-st.subheader("Study Results Summary")
-
-# Key findings
-col1, col2 = st.columns(2)
-
-with col1:
-    st.metric("Total Individuals Collected", "4,761")
-    st.metric("Taxonomic Groups Identified", "15+")
-    st.metric("Sampling Sites", "10")
-
-with col2:
-    st.metric("Season 1 Individuals", "4,157")
-    st.metric("Season 2 Individuals", "604")
-    st.metric("Sampling Seasons", "2")
-
-st.markdown("---")
 
 
     # 3. Taxonomic Diversity
@@ -573,6 +552,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
