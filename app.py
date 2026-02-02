@@ -58,7 +58,7 @@ if menu == "Researcher Profile":
         Crocodile River, Mpumalanga, South Africa
         """)
     
-    
+    st.markdown("---")
     
     # Contact Information in columns
     col1, col2, col3 = st.columns(3)
@@ -549,6 +549,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
