@@ -67,8 +67,6 @@ if menu == "Researcher Profile":
     🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
     """)
 
-    st.divider()
-
 
 
     st.divider()
@@ -521,6 +519,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
