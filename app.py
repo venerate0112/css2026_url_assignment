@@ -434,39 +434,38 @@ elif menu == "Results":
     """
     st.markdown(perm_html, unsafe_allow_html=True)
 
-
-
 # --- DISCUSSION ---
 elif menu == "Discussion":
     st.subheader("Discussion")
-
+    
     st.markdown("""
-    <p><strong style="color:black;">
-    Cause of dramatic seasonal decline in macroinvertebrates
-    </strong></p>
+    ### Key Findings Discussion
+    
+    #### 1. Seasonal Patterns
+    - **S1 (Cool-Dry):** Higher abundance (4,157 individuals) due to stable conditions
+    - **S2 (Wet-Cool):** Lower abundance (604 individuals) likely due to flow disturbance
+    - **Macroplastics** served as refuge habitats during high-flow conditions
+    
+    #### 2. Substrate Comparison
+    - No significant difference in community composition between substrates
+    - Macroplastics supported comparable diversity to natural substrates
+    - Plastic substrates showed higher colonization in S2
+    
+    #### 3. Ecological Implications
+    - Macroplastics function as **alternative habitats**
+    - May alter community dynamics under changing flow regimes
+    - Provide stable surfaces in disturbed environments
+    """)
+    
+    with st.expander("Environmental Factors"):
+        st.markdown("""
+        **Water Quality Influence:**
+        - PCA showed 68.1% variance explained by environmental variables
+        - Clear seasonal separation in water quality
+        - Temperature and flow regime primary drivers
+        """)
 
-    <p><strong style="color:blue;">Life Cycle Patterns:</strong><br>
-    Many aquatic insects have synchronized life cycles. The high abundance in S1 (cool-dry)
-    likely reflects mature larvae before emerging as flying adults.<br>
-    The low abundance in S2 (wet-cool) suggests that most larvae had already emerged,
-    leaving only a few individuals.
-    </p>
 
-    <p><strong style="color:blue;">Physical Disturbance:</strong><br>
-    Rainfall occurring a week prior to sampling likely increased river flow and displaced organisms.<br>
-    Higher flows during the wet season can sweep macroinvertebrates off natural substrates.
-    </p>
-
-    <p><strong style="color:black;">
-    Causes of plastics supporting more diversity in Season 2
-    </strong></p>
-
-    <p><strong style="color:blue;">Habitat Stability &amp; Complexity:</strong><br>
-    During high-flow events, natural substrates such as leaves and small rocks are easily displaced.<br>
-    Macroplastics provide more stable refuges during disturbances due to their size,
-    durability, and ability to become lodged within the river channel.
-    </p>
-    """, unsafe_allow_html=True)
 
 # --- CONCLUSION ---
 elif menu == "Conclusion":
@@ -553,6 +552,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
