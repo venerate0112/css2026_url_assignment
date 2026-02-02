@@ -48,6 +48,7 @@ if menu == "Researcher Profile":
     st.divider()
 
 
+
 # --- SIDEBAR NAVIGATION ---
 menu = st.sidebar.radio(
     "Navigation",
@@ -483,6 +484,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
