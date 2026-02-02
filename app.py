@@ -320,13 +320,6 @@ with col2:
 
 st.markdown("---")
 
-# Existing species composition text
-st.markdown("""
-*4,157 individuals* were collected in S1 and *604 individuals* in S2.
-- S1: Natural (2,232), Plastics (1,916)  
-- S2: Natural (181), Plastics (423)  
-""")
-
 
     # 3. Taxonomic Diversity
       # Diversity indices images
@@ -580,6 +573,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
