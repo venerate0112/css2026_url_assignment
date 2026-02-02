@@ -11,89 +11,27 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- SIDEBAR NAVIGATION ---
-menu = st.sidebar.radio(
-    "Navigation",
-    [
-        "Researcher Profile",
-        "Study Overview",
-        "Ethical Clearance",
-        "Methods",
-        "Results",
-        "Discussion",
-        "Conclusion",
-        "Acknowledgments",
-        "References"
-    ]
+# --- TITLE AND AUTHOR INFO ---
+st.title(
+    "Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates "
+    "in the Crocodile River, Mpumalanga"
 )
 
-# --- PAGE CONFIGURATION ---
-st.set_page_config(
-    page_title="Ecological Role of Macroplastics",
-    layout="wide"
-)
+st.markdown("""
+Venerate Mdaka | BSc Honours in Environmental Science | University of Mpumalanga   
+
+📧 Email: [veneratemdakahlonipho@gmail.com](mailto:veneratemdakahlonipho@gmail.com)  
+🔗 LinkedIn: [https://www.linkedin.com/in/venerate-mdaka-799703279](https://www.linkedin.com/in/venerate-mdaka-799703279)  
+🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
+""")
+
+st.divider()
 
 # --- SIDEBAR NAVIGATION ---
 menu = st.sidebar.radio(
     "Navigation",
-    [
-        "Researcher Profile",
-        "Study Overview",
-        "Ethical Clearance",
-        "Methods",
-        "Results",
-        "Discussion",
-        "Conclusion",
-        "Acknowledgments",
-        "References"
-    ]
+    ["Study Overview", "Ethical Clearance", "Methods", "Results", "Discussion", "Conclusion", "Acknowledgments", "References"]
 )
-
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 📄 Documents")
-
-# --- PAGE CONFIGURATION ---
-st.set_page_config(
-    page_title="Ecological Role of Macroplastics",
-    layout="wide"
-)
-
-# --- SIDEBAR NAVIGATION ---
-menu = st.sidebar.radio(
-    "Navigation",
-    [
-        "Researcher Profile",
-        "Study Overview",
-        "Ethical Clearance",
-        "Methods",
-        "Results",
-        "Discussion",
-        "Conclusion",
-        "Acknowledgments",
-        "References"
-    ]
-)
-
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 📄 Documents")
-
-# --- RESEARCHER PROFILE ---
-if menu == "Researcher Profile":
-    st.title(
-        "Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates "
-        "in the Crocodile River, Mpumalanga"
-    )
-
-    st.markdown("""
-    Venerate Mdaka | BSc Honours in Environmental Science | University of Mpumalanga   
-
-    📧 Email: [veneratemdakahlonipho@gmail.com](mailto:veneratemdakahlonipho@gmail.com)  
-    🔗 LinkedIn: [https://www.linkedin.com/in/venerate-mdaka-799703279](https://www.linkedin.com/in/venerate-mdaka-799703279)  
-    🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
-    """)
-
-    st.divider()
-
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📄 Documents")
@@ -427,6 +365,7 @@ elif menu == "Results":
     st.markdown(perm_html, unsafe_allow_html=True)
 
 
+
 # --- DISCUSSION ---
 elif menu == "Discussion":
     st.subheader("Discussion")
@@ -458,32 +397,13 @@ elif menu == "Discussion":
     durability, and ability to become lodged within the river channel.
     </p>
     """, unsafe_allow_html=True)
+
 # --- CONCLUSION ---
 elif menu == "Conclusion":
     st.subheader("Conclusion")
-    
     st.markdown("""
-    ### Main Conclusions
-
-    #### 1. Habitat Function Confirmed
-    ✅ Macroplastics provide viable habitats for aquatic macroinvertebrates
-    ✅ Comparable community structure to natural substrates
-
-    #### 2. Seasonal Dynamics
-    ✅ Significant seasonal variation in colonization patterns
-    ✅ Macroplastics more important during high-flow conditions
-
-    #### 3. Management Implications
-    ⚠️ Plastic pollution has complex ecological roles
-    ⚠️ Removal strategies should consider habitat function
-    ⚠️ Need for integrated pollution management
-    """)
-    
-    st.info("""
-    **Recommendations:**
-    1. Consider ecological functions in plastic pollution management
-    2. Monitor plastic habitats in conservation planning
-    3. Further research on long-term impacts
+    The study confirms that aquatic macroinvertebrates actively colonize macroplastic debris in the Crocodile River, with macroplastics acting as functional habitats like natural substrates.
+    Additionally, macroplastics may alter community structures and provide stable refuges under changing environmental conditions.
     """)
 
 # --- ACKNOWLEDGMENTS ---
@@ -542,15 +462,6 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
-
-
-
-
-
-
-
-
-
 
 
 
