@@ -34,12 +34,12 @@ if menu == "Researcher Profile":
     col1, col2 = st.columns([1, 2])
     
     with col1:
-        # Load researcher image directly from GitHub
-        st.image(
-            "https://raw.githubusercontent.com/VenerateMdaka/css2026-macroplastics/main/profile_pic.jpg",
-            caption="Venerate Mdaka",
-            use_column_width=True
-        )
+        # Load researcher image from root folder
+        try:
+            researcher_img = Image.open("profile_pic.jpg")
+            st.image(researcher_img, caption="Venerate Mdaka", use_column_width=True)
+        except FileNotFoundError:
+            st.warning("Researcher image not found in the root folder.")
     
     with col2:
         st.markdown("""
@@ -57,9 +57,6 @@ if menu == "Researcher Profile":
         **Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates**  
         Crocodile River, Mpumalanga, South Africa
         """)
-    
-    # Single separator line
-    st.markdown("---")
     
     # Contact Information in columns
     col1, col2, col3 = st.columns(3)
@@ -95,8 +92,9 @@ if menu == "Researcher Profile":
         - Laboratory Analysis
         - Scientific Writing
         """)
-
-
+    
+    # Only one separator line at the end
+    st.markdown("---")
 
 
     st.divider()
@@ -549,6 +547,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
