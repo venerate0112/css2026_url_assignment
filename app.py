@@ -69,7 +69,11 @@ if menu == "Researcher Profile":
     with col1:
         st.markdown("""
         ### Contact Information
-        📧 **Email:** veneratemdakahlonipho@gmail.com
+        📧 **Email:** [veneratemdakahlonipho@gmail.com](mailto:veneratemdakahlonipho@gmail.com)
+        
+        🔗 **LinkedIn:** [Venerate Mdaka](https://www.linkedin.com/in/venerate-mdaka-799703279)
+        
+        🆔 **ORCID:** [0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
         """)
     
     with col2:
@@ -528,6 +532,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
