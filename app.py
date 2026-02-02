@@ -11,27 +11,42 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- TITLE AND AUTHOR INFO ---
-st.title(
-    "Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates "
-    "in the Crocodile River, Mpumalanga"
-)
-
-st.markdown("""
-Venerate Mdaka | BSc Honours in Environmental Science | University of Mpumalanga   
-
-📧 Email: [veneratemdakahlonipho@gmail.com](mailto:veneratemdakahlonipho@gmail.com)  
-🔗 LinkedIn: [https://www.linkedin.com/in/venerate-mdaka-799703279](https://www.linkedin.com/in/venerate-mdaka-799703279)  
-🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
-""")
-
-st.divider()
-
 # --- SIDEBAR NAVIGATION ---
 menu = st.sidebar.radio(
     "Navigation",
-    ["Study Overview", "Ethical Clearance", "Methods", "Results", "Discussion", "Conclusion", "Acknowledgments", "References"]
+    [
+        "Researcher Profile",
+        "Study Overview",
+        "Ethical Clearance",
+        "Methods",
+        "Results",
+        "Discussion",
+        "Conclusion",
+        "Acknowledgments",
+        "References"
+    ]
 )
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 📄 Documents")
+
+# --- RESEARCHER PROFILE ---
+if menu == "Researcher Profile":
+    st.title(
+        "Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates "
+        "in the Crocodile River, Mpumalanga"
+    )
+
+    st.markdown("""
+    Venerate Mdaka | BSc Honours in Environmental Science | University of Mpumalanga   
+
+    📧 Email: [veneratemdakahlonipho@gmail.com](mailto:veneratemdakahlonipho@gmail.com)  
+    🔗 LinkedIn: [https://www.linkedin.com/in/venerate-mdaka-799703279](https://www.linkedin.com/in/venerate-mdaka-799703279)  
+    🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
+    """)
+
+    st.divider()
+
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📄 Documents")
