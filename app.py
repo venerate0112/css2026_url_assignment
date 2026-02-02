@@ -28,7 +28,6 @@ menu = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("### 📄 Documents")
 
 # --- RESEARCHER PROFILE ---
 if menu == "Researcher Profile":
@@ -552,6 +551,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
