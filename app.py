@@ -5,25 +5,23 @@ import qrcode
 from io import BytesIO
 import fitz  # PyMuPDF for PDF rendering
 
-# --- PAGE CONFIGURATION ---
-st.set_page_config(
-    page_title="Ecological Role of Macroplastics",
-    layout="wide"
-)
+# --- RESEARCHER PROFILE ---
+if menu == "Researcher Profile":
+    st.title(
+        "Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates "
+        "in the Crocodile River, Mpumalanga"
+    )
 
-# --- TITLE AND AUTHOR INFO ---
-st.title(
-    "Ecological Role of Macroplastics as Habitats for Aquatic Macroinvertebrates "
-    "in the Crocodile River, Mpumalanga"
-)
+    st.markdown("""
+    Venerate Mdaka | BSc Honours in Environmental Science | University of Mpumalanga   
 
-st.markdown("""
-Venerate Mdaka | BSc Honours in Environmental Science | University of Mpumalanga   
+    📧 Email: [veneratemdakahlonipho@gmail.com](mailto:veneratemdakahlonipho@gmail.com)  
+    🔗 LinkedIn: [https://www.linkedin.com/in/venerate-mdaka-799703279](https://www.linkedin.com/in/venerate-mdaka-799703279)  
+    🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
+    """)
 
-📧 Email: [veneratemdakahlonipho@gmail.com](mailto:veneratemdakahlonipho@gmail.com)  
-🔗 LinkedIn: [https://www.linkedin.com/in/venerate-mdaka-799703279](https://www.linkedin.com/in/venerate-mdaka-799703279)  
-🆔 ORCID: [https://orcid.org/0009-0000-0872-3156](https://orcid.org/0009-0000-0872-3156)
-""")
+    st.divider()
+
 
 st.divider()
 
@@ -462,6 +460,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
