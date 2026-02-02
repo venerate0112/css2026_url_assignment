@@ -455,16 +455,13 @@ elif menu == "Discussion":
     - Macroplastics function as **alternative habitats**
     - May alter community dynamics under changing flow regimes
     - Provide stable surfaces in disturbed environments
-    """)
     
-    with st.expander("Environmental Factors"):
-        st.markdown("""
-        **Water Quality Influence:**
-        - PCA showed 68.1% variance explained by environmental variables
-        - Clear seasonal separation in water quality
-        - Temperature and flow regime primary drivers
-        """)
-
+    #### Environmental Factors
+    **Water Quality Influence:**
+    - PCA showed 68.1% variance explained by environmental variables
+    - Clear seasonal separation in water quality
+    - Temperature and flow regime primary drivers
+    """)
 
 
 # --- CONCLUSION ---
@@ -552,6 +549,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
