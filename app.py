@@ -34,18 +34,12 @@ if menu == "Researcher Profile":
     col1, col2 = st.columns([1, 2])
     
     with col1:
-        # Load researcher image from GitHub
-        try:
-            researcher_img = Image.open(
-                BytesIO(
-                    requests.get(
-                        "https://raw.githubusercontent.com/VenerateMdaka/css2026-macroplastics/main/profile_pic.jpg"
-                    ).content
-                )
-            )
-            st.image(researcher_img, caption="Venerate Mdaka", use_column_width=True)
-        except:
-            st.warning("Unable to load researcher image from GitHub.")
+        # Load researcher image directly from GitHub
+        st.image(
+            "https://raw.githubusercontent.com/VenerateMdaka/css2026-macroplastics/main/profile_pic.jpg",
+            caption="Venerate Mdaka",
+            use_column_width=True
+        )
     
     with col2:
         st.markdown("""
@@ -64,6 +58,7 @@ if menu == "Researcher Profile":
         Crocodile River, Mpumalanga, South Africa
         """)
     
+    # Single separator line
     st.markdown("---")
     
     # Contact Information in columns
@@ -100,6 +95,7 @@ if menu == "Researcher Profile":
         - Laboratory Analysis
         - Scientific Writing
         """)
+
 
 
 
@@ -438,7 +434,6 @@ elif menu == "Results":
     st.markdown(perm_html, unsafe_allow_html=True)
 
 
-
 # --- DISCUSSION ---
 elif menu == "Discussion":
     st.subheader("Discussion")
@@ -554,6 +549,7 @@ with footer_col2:
     st.caption("University of Mpumalanga")
 with footer_col3:
     st.caption("BSc Honours Research Project")
+
 
 
 
